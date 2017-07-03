@@ -8,7 +8,6 @@ module.exports = function getHTML (options, callback) {
 
     response.on('data', function (data) {
         resp += data + "\n";
-        console.log("entrou");
     });
 
     response.on('end', function() {
